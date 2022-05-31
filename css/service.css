@@ -1,0 +1,79 @@
+.services {
+  background-color: #212428;
+  padding: 100px 15px 70px;
+}
+
+.services .container .row .title h1::before {
+  left: 30%;
+}
+
+.service-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  background-color: #212428;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 5px 6px 20px 0 rgba(0, 0, 0, 0.40);
+}
+
+.box::before {
+  content: "";
+  height: 2px;
+  background-color: #5f88e0;
+  position: absolute;
+  bottom: 0px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s ease;
+}
+
+.box:hover::before {
+  width: 100%;
+}
+
+.box .icon {
+  height: 60px;
+  width: 60px;
+  background-color: #5f88e0;
+  margin: 15px auto 20px;
+  border-radius: 50%;
+}
+
+.box .icon .fa {
+  font-size: 25px;
+  color: #c4cfde;
+  line-height: 60px;
+}
+
+.box .icon .fas {
+  font-size: 25px;
+  color: #c4cfde;
+  line-height: 60px;
+}
+
+.box h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #c4cfde;
+  margin: 0;
+}
+
+.box p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #c4cfde;
+  margin: 5px 0 10px;
+}
